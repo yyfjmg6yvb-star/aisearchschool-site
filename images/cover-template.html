@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1000px; height: 1000px; overflow: hidden;
+  background: #07091f;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  position: relative;
+}
+
+/* Deep space background */
+.bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 85% 15%, rgba(0,180,216,0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 10% 85%, rgba(91,43,255,0.15) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 30% at 50% 50%, rgba(0,100,140,0.08) 0%, transparent 70%),
+    linear-gradient(155deg, #0b0e28 0%, #07091f 50%, #0a0620 100%);
+}
+
+/* Grid lines */
+.grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,180,216,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,180,216,0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Glowing orb top right */
+.orb1 {
+  position: absolute;
+  width: 480px; height: 480px;
+  top: -140px; right: -100px;
+  background: radial-gradient(circle, rgba(0,180,216,0.22) 0%, rgba(0,180,216,0.06) 45%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* Glowing orb bottom left */
+.orb2 {
+  position: absolute;
+  width: 320px; height: 320px;
+  bottom: -80px; left: -60px;
+  background: radial-gradient(circle, rgba(91,43,255,0.2) 0%, transparent 65%);
+  border-radius: 50%;
+}
+
+/* Diagonal accent line */
+.accent-line {
+  position: absolute;
+  top: 0; right: 180px;
+  width: 1px; height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0,180,216,0.3) 30%, rgba(0,180,216,0.1) 70%, transparent);
+}
+
+/* Content */
+.inner {
+  position: relative; z-index: 10;
+  padding: 54px 60px 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top badge row */
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.series-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,180,216,0.12);
+  border: 1px solid rgba(0,180,216,0.35);
+  border-radius: 100px;
+  padding: 7px 16px;
+}
+.pill-dot {
+  width: 6px; height: 6px;
+  background: #00B4D8;
+  border-radius: 50%;
+}
+.series-text {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #00B4D8;
+}
+.module-badge {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 1px;
+}
+
+/* Spacer */
+.spacer { flex: 1; }
+
+/* Main content block */
+.content-block {
+  margin-bottom: 0;
+}
+
+/* Eyebrow */
+.eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00B4D8;
+  margin-bottom: 22px;
+  opacity: 0.9;
+}
+
+/* Title */
+.title {
+  font-size: 68px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.02;
+  letter-spacing: -2.5px;
+  margin-bottom: 12px;
+}
+.title .highlight {
+  color: #00B4D8;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.4;
+  margin-bottom: 44px;
+  letter-spacing: -0.2px;
+}
+
+/* Stats row */
+.stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 44px;
+}
+.stat {
+  flex: 1;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 18px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.stat::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00B4D8, transparent);
+}
+.stat-num {
+  font-size: 32px;
+  font-weight: 900;
+  color: #00B4D8;
+  line-height: 1;
+  margin-bottom: 6px;
+  letter-spacing: -1px;
+}
+.stat-label {
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* Outcome strip */
+.outcome {
+  background: rgba(0,180,216,0.08);
+  border: 1px solid rgba(0,180,216,0.2);
+  border-left: 3px solid #00B4D8;
+  border-radius: 0 10px 10px 0;
+  padding: 16px 22px;
+  margin-bottom: 44px;
+}
+.outcome-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00B4D8;
+  margin-bottom: 7px;
+}
+.outcome-text {
+  font-size: 15px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+.brand {
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+.brand span { color: #00B4D8; }
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.pages-badge {
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+  font-weight: 600;
+}
+.price-badge {
+  background: #00B4D8;
+  color: #07091f;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 7px 18px;
+  border-radius: 100px;
+  letter-spacing: -0.3px;
+}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="grid"></div>
+<div class="orb1"></div>
+<div class="orb2"></div>
+<div class="accent-line"></div>
+
+<div class="inner">
+  <div class="top-row">
+    <div class="series-pill">
+      <div class="pill-dot"></div>
+      <span class="series-text">Get Found in AI Local Search</span>
+    </div>
+    <span class="module-badge">Module 1 of 5</span>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="content-block">
+    <div class="eyebrow">The foundation guide</div>
+    <div class="title">Why Local<br>Search Is<br><span class="highlight">Going AI</span></div>
+    <div class="subtitle">And what that means for your business</div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">1.2%</div>
+        <div class="stat-label">of businesses get recommended by ChatGPT</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">527%</div>
+        <div class="stat-label">growth in AI search traffic in 12 months</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">45%</div>
+        <div class="stat-label">of local searches now use AI (up from 6%)</div>
+      </div>
+    </div>
+
+    <div class="outcome">
+      <div class="outcome-label">After reading this</div>
+      <div class="outcome-text">You'll understand exactly how AI local search works — and why 98.8% of businesses are invisible to it. No jargon. Just clarity.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="brand">AI Search <span>School</span></div>
+    <div class="footer-right">
+      <span class="pages-badge">26 pages · Beginner-friendly</span>
+      <span class="price-badge">£9</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

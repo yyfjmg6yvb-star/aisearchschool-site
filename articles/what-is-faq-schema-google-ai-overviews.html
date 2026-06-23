@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Is FAQ Schema and Why It Gets You Into Google AI Overviews | AI Search School</title>
+<meta name="description" content="FAQ schema is structured code that labels your Q&A content for AI and search engines. Sites with FAQPage schema appear in 47% more AI Overview results. Here's exactly what it is, how it works, and how to add it in under 30 minutes.">
+<link rel="canonical" href="https://aisearchschool.com/articles/what-is-faq-schema-google-ai-overviews.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230D1030'/%3E%3Ctext x='50' y='70' font-family='Arial,sans-serif' font-size='62' font-weight='bold' text-anchor='middle' fill='%2300B4D8'%3EA%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What Is FAQ Schema and Why It Gets You Into Google AI Overviews">
+<meta property="og:description" content="FAQ schema labels your Q&A content for AI and search engines. Sites with FAQPage schema appear in 47% more AI Overview results. Here's exactly what it is and how to add it.">
+<meta property="og:url" content="https://aisearchschool.com/articles/what-is-faq-schema-google-ai-overviews.html">
+<meta property="og:site_name" content="AI Search School">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"What Is FAQ Schema and Why It Gets You Into Google AI Overviews",
+  "description":"FAQ schema labels your Q&A content for AI and search engines. Sites with FAQPage schema appear in 47% more AI Overview results. Here's exactly what it is and how to add it in under 30 minutes.",
+  "url":"https://aisearchschool.com/articles/what-is-faq-schema-google-ai-overviews.html",
+  "datePublished":"2026-06-22",
+  "dateModified":"2026-06-22",
+  "author":{"@type":"Person","name":"Chris","description":"Founder of AI Search School. Teaching local businesses how to get found in the AI era.","url":"https://aisearchschool.com"},
+  "publisher":{"@type":"Organization","name":"AI Search School","url":"https://aisearchschool.com"},
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://aisearchschool.com/articles/what-is-faq-schema-google-ai-overviews.html"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"What is FAQ schema (FAQPage schema)?",
+      "acceptedAnswer":{"@type":"Answer","text":"FAQ schema, technically called FAQPage schema, is structured code (JSON-LD) added to a webpage that explicitly labels the question-and-answer content in a format search engines and AI tools can read directly. Instead of Google or ChatGPT having to guess which text on your page is a question and which is the answer, FAQPage schema tells them precisely — with machine-readable tags. Pages with FAQPage schema are eligible for FAQ rich results in Google Search and are cited significantly more often in AI-generated answers."}
+    },
+    {
+      "@type":"Question",
+      "name":"Does FAQ schema still work in 2026?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes — for AI search visibility, FAQ schema is more valuable in 2026 than it has ever been. Google reduced FAQ rich result displays in organic search in 2023, but FAQPage schema remains one of the most powerful signals for AI Overviews, ChatGPT citations, and Perplexity results. Sites with FAQPage schema appear in 47% more Perplexity AI responses than those without. The schema works not just for traditional search but as a direct input to AI language model citations."}
+    },
+    {
+      "@type":"Question",
+      "name":"How many questions should I include in FAQ schema?",
+      "acceptedAnswer":{"@type":"Answer","text":"Between 4 and 8 questions is the optimal range for most business websites. Too few (1–2) doesn't provide enough topical coverage for AI to find your page relevant across a range of queries. Too many (20+) dilutes the quality and can appear spammy. Focus on 4–8 questions that your customers genuinely ask — about pricing, process, qualifications, timing, or common problems in your trade."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do I need a developer to add FAQ schema to my website?",
+      "acceptedAnswer":{"@type":"Answer","text":"Not necessarily. If your website uses WordPress, plugins like Rank Math or Yoast SEO Premium can add FAQ schema without any coding. For any website, you can generate the JSON-LD code using Google's Structured Data Markup Helper (free), copy and paste the output into your page's HTML between script tags, and verify it with Google's Rich Results Test. A basic FAQ schema implementation takes about 20–30 minutes for a non-technical user."}
+    },
+    {
+      "@type":"Question",
+      "name":"What is the difference between FAQ schema and LocalBusiness schema?",
+      "acceptedAnswer":{"@type":"Answer","text":"LocalBusiness schema marks up factual details about your business — your name, address, phone number, opening hours, and service area. FAQPage schema marks up question-and-answer content on your page. Both serve AI visibility but in different ways: LocalBusiness schema helps AI identify and describe your business; FAQPage schema helps AI cite specific answers from your content. For maximum AI visibility, you need both — they complement rather than replace each other."}
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--t:#00B4D8;--t2:#0077A3;--ink:#0D1030;--grey:#4a5270;--soft:#9aa0bc;--line:#e4f4fa;--mist:#F0FAFF;--white:#fff;--hd:'Plus Jakarta Sans',sans-serif;--bd:'Inter',sans-serif;--sh2:0 6px 20px rgba(0,100,130,.08);--r:16px;}
+*{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}body{font-family:var(--bd);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased;line-height:1.7;}a{text-decoration:none;color:inherit;}.wrap{max-width:1100px;margin:0 auto;padding:0 22px;}.art-wrap{max-width:720px;margin:0 auto;padding:0 22px;}
+h1,h2,h3{font-family:var(--hd);font-weight:800;line-height:1.1;letter-spacing:-.4px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--hd);font-weight:700;font-size:14px;padding:12px 22px;border-radius:999px;border:0;cursor:pointer;transition:transform .14s;text-decoration:none;}.btn:hover{transform:translateY(-2px);}
+.btn-teal{background:var(--t);color:#fff;box-shadow:0 8px 20px rgba(0,180,216,.3);}
+header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px;}
+.logo{font-family:var(--hd);font-weight:800;font-size:19px;color:var(--ink);}.logo span{color:var(--t);}
+.nl{display:flex;align-items:center;gap:22px;}.nl a{font-family:var(--hd);font-weight:600;font-size:14px;color:var(--grey);}.nl a:hover{color:var(--t);}
+.burger{display:none;background:none;border:0;font-size:22px;cursor:pointer;}
+@media(max-width:820px){.nl{display:none;}.burger{display:block;}}
+.breadcrumb{padding:18px 0 0;font-size:13px;color:var(--soft);}.breadcrumb a{color:var(--soft);}.breadcrumb span{margin:0 6px;}
+.art-header{padding:32px 0 40px;}
+.art-cat-label{font-family:var(--hd);font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--t);margin-bottom:12px;}
+.art-header h1{font-size:38px;margin-bottom:16px;line-height:1.1;}
+.art-meta{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--soft);flex-wrap:wrap;}.art-meta .author{font-weight:600;color:var(--grey);}
+.art-body{padding-bottom:60px;}
+.art-body p{font-size:16.5px;color:var(--grey);margin-bottom:22px;line-height:1.74;}
+.art-body h2{font-size:26px;color:var(--ink);margin:42px 0 14px;letter-spacing:-.3px;}
+.art-body h3{font-size:19px;color:var(--ink);margin:28px 0 11px;}
+.art-body ul,.art-body ol{margin:0 0 22px;padding-left:0;list-style:none;}
+.art-body ul li,.art-body ol li{font-size:16px;color:var(--grey);padding:8px 0 8px 26px;border-bottom:1px solid var(--line);position:relative;line-height:1.6;}
+.art-body ul li:last-child,.art-body ol li:last-child{border-bottom:0;}
+.art-body ul li::before{content:"\2713";position:absolute;left:0;color:var(--t);font-weight:800;}
+.art-body ol{counter-reset:ol;}.art-body ol li{counter-increment:ol;}.art-body ol li::before{content:counter(ol)".";position:absolute;left:0;color:var(--t);font-weight:800;font-family:var(--hd);}
+.art-body strong{color:var(--ink);font-weight:600;}
+.art-body a{color:var(--t);font-weight:600;}.art-body a:hover{text-decoration:underline;}
+.art-body blockquote{background:var(--mist);border-left:4px solid var(--t);border-radius:0 var(--r) var(--r) 0;padding:18px 22px;margin:26px 0;font-family:var(--hd);font-weight:700;font-size:17px;color:var(--ink);line-height:1.45;}
+.art-body .divider{border:0;border-top:1px solid var(--line);margin:40px 0;}
+.takeaway{background:var(--mist);border:1px solid rgba(0,180,216,.25);border-radius:var(--r);padding:20px 22px;margin:28px 0;}
+.takeaway .tk-label{font-family:var(--hd);font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--t);margin-bottom:8px;}
+.takeaway p{font-size:15px;color:var(--ink);margin:0;line-height:1.6;}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0;}
+.stat-box{background:var(--mist);border:1px solid rgba(0,180,216,.2);border-radius:14px;padding:18px 16px;text-align:center;}
+.stat-num{font-family:var(--hd);font-weight:800;font-size:30px;color:var(--t);line-height:1;}
+.stat-lbl{font-size:13px;color:var(--soft);margin-top:6px;line-height:1.4;}
+@media(max-width:560px){.stat-row{grid-template-columns:1fr 1fr;}}
+.code-block{background:#0D1030;border-radius:12px;padding:22px 24px;margin:22px 0;overflow-x:auto;}
+.code-block pre{font-family:'Courier New',monospace;font-size:13px;line-height:1.65;color:#e2e8f0;}
+.code-block .c-key{color:#00B4D8;}
+.code-block .c-val{color:#FFD23E;}
+.code-block .c-str{color:#00E0C0;}
+.ass-cta{background:var(--ink);border-radius:20px;padding:32px;margin:44px 0;color:#fff;position:relative;overflow:hidden;}
+.ass-cta::before{content:'';position:absolute;inset:-30%;background:radial-gradient(38% 44% at 82% 15%,rgba(0,180,216,.4),transparent 60%);pointer-events:none;}
+.ass-cta>*{position:relative;}
+.ass-cta .label{font-family:var(--hd);font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--t);margin-bottom:8px;}
+.ass-cta h3{font-size:21px;color:#fff;margin-bottom:8px;}
+.ass-cta p{font-size:14px;color:#e2e4f3;margin-bottom:18px;}
+.ass-cta .price{font-family:var(--hd);font-weight:800;font-size:26px;color:#fff;margin-bottom:16px;}
+.ass-cta .price small{font-size:13px;color:#9aa0bc;font-weight:600;}
+.faq-section{margin:44px 0;}
+.faq-section h2{font-family:var(--hd);font-size:24px;margin-bottom:22px;}
+.faq-item{border-bottom:1px solid var(--line);padding:18px 0;}
+.faq-item:last-child{border-bottom:0;}
+.faq-q{font-family:var(--hd);font-weight:700;font-size:16px;color:var(--ink);margin-bottom:8px;}
+.faq-a{font-size:15px;color:var(--grey);line-height:1.65;}
+.related{margin-top:52px;padding-top:36px;border-top:1px solid var(--line);}
+.related h2{font-family:var(--hd);font-weight:800;font-size:19px;margin-bottom:18px;}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.rel-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--sh2);transition:transform .14s;display:block;}
+.rel-card:hover{transform:translateY(-2px);}
+.rel-cat{font-family:var(--hd);font-weight:700;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--t);margin-bottom:6px;}
+.rel-card h3{font-size:15px;font-family:var(--hd);font-weight:700;color:var(--ink);line-height:1.3;}
+@media(max-width:560px){.related-grid{grid-template-columns:1fr;}.art-header h1{font-size:28px;}}
+footer{background:var(--ink);color:#c7c9de;padding:44px 0 22px;margin-top:60px;}
+.fcols{display:flex;gap:32px;flex-wrap:wrap;justify-content:space-between;margin-bottom:28px;}
+footer .logo{font-size:18px;}footer .ft{margin-top:9px;font-size:13px;color:#9aa0bc;max-width:240px;line-height:1.55;}
+.fnav{display:flex;gap:40px;flex-wrap:wrap;}.fnav h4{font-family:var(--hd);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;margin-bottom:10px;}.fnav a{display:block;font-size:13px;color:#c7c9de;margin-bottom:7px;}.fnav a:hover{color:#fff;}
+.fbot{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;font-size:12px;color:#7a8098;display:flex;justify-content:space-between;flex-wrap:wrap;gap:7px;}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap"><nav>
+  <a href="/" class="logo"><span>AI Search</span> School</a>
+  <div class="nl" id="nav">
+    <a href="/articles/">Articles</a>
+    <a href="/guides/">Guides</a>
+    <a href="https://welaunchd.com" target="_blank" rel="noopener" style="color:#5B2BFF;font-weight:700;">WeLaunchd ↗</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <a href="/guides/" class="btn btn-teal">Get the guides &rarr;</a>
+    <button class="burger" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+  </div>
+</nav></div>
+</header>
+
+<main><div class="art-wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>›</span><a href="/articles/">Articles</a><span>›</span>Getting started
+  </nav>
+
+  <header class="art-header">
+    <div class="art-cat-label" data-cat="start">Getting started</div>
+    <h1>What Is FAQ Schema and Why It Gets You Into Google AI Overviews</h1>
+    <div class="art-meta">
+      <span class="author">Chris · June 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+    </div>
+  </header>
+
+  <article class="art-body">
+
+    <p>FAQPage schema — commonly called FAQ schema — is structured code you add to your website that labels your question-and-answer content in a format AI tools and search engines can read directly. <strong>Sites with FAQPage schema appear in 47% more Perplexity AI responses</strong> and 78% of Google AI Overviews cite schema-rich pages over plain content. This article explains what it is, why it works, exactly how to write it, and how to add it to your site in under 30 minutes — no developer required.</p>
+
+    <div class="stat-row">
+      <div class="stat-box"><div class="stat-num">47%</div><div class="stat-lbl">more Perplexity citations for pages with FAQPage schema</div></div>
+      <div class="stat-box"><div class="stat-num">78%</div><div class="stat-lbl">of Google AI Overviews cite schema-rich pages over plain content</div></div>
+      <div class="stat-box"><div class="stat-num">#1</div><div class="stat-lbl">FAQPage has the highest AI citation rate of any schema type</div></div>
+    </div>
+
+    <h2>What is FAQ schema in plain English?</h2>
+
+    <p>Your website has content on it. To a human reading the page, it's obvious which text is a question ("How much does a boiler service cost?") and which is the answer ("A standard boiler service costs between £80 and £120 in the UK"). But to a machine — Google's crawler, ChatGPT's retrieval system, Perplexity's index — that distinction isn't obvious at all. It's just text on a page.</p>
+
+    <p>FAQ schema solves this by adding a second layer of information: machine-readable code that says, explicitly, "this is a question" and "this is the answer to that question." It's written in a format called JSON-LD (JavaScript Object Notation for Linked Data) and placed inside a <code>&lt;script&gt;</code> tag on your page. Users never see it. Search engines and AI tools read it directly.</p>
+
+    <blockquote>FAQ schema is like adding subtitles to a foreign film. The film is already there. The subtitles just make sure the right audience can understand every word.</blockquote>
+
+    <h2>Why does FAQ schema work so well for AI Overviews?</h2>
+
+    <p>Google AI Overviews (and tools like ChatGPT and Perplexity) are fundamentally trying to answer questions. Their job is: given a user's query, find the most direct, accurate answer and present it. FAQ schema makes your content the easiest possible thing to cite because:</p>
+
+    <ul>
+      <li>The question is already labelled — the AI doesn't have to guess which part of your page is relevant</li>
+      <li>The answer is already scoped — the AI knows exactly where the answer ends, so it won't accidentally pull in unrelated text</li>
+      <li>The Q&A pair is self-contained — it can be extracted and cited without needing surrounding context</li>
+      <li>The content is pre-qualified as answer content — you wrote it specifically to answer a question, which is exactly what the AI is looking for</li>
+    </ul>
+
+    <p>A page without schema forces AI to interpret and guess. A page with FAQPage schema hands the answer over in the exact format AI needs. That's why the citation rate difference is so significant.</p>
+
+    <h2>Does FAQ schema still work in 2026?</h2>
+
+    <p>There's some confusion about this because Google reduced the display of FAQ rich results in traditional organic search in 2023. Some people concluded that FAQ schema was "dead." It isn't — and the distinction matters.</p>
+
+    <p>What changed in 2023 was the display of FAQ accordion dropdowns in traditional search results pages. What didn't change — and has in fact grown in importance — is the role of FAQPage schema in AI Overviews, AI citations, and structured data crawling. Google's own documentation confirms that FAQPage schema remains a supported rich result type and continues to influence AI Overview content sourcing.</p>
+
+    <p>In 2026, FAQ schema is more valuable than it has ever been for AI-era visibility. The mechanism just shifted from visual rich results to AI citation influence — which is a higher-value outcome anyway.</p>
+
+    <h2>How to write good FAQ schema content</h2>
+
+    <p>Before you write the schema, you need the content. The schema is just labelling — you need genuine questions and answers worth labelling.</p>
+
+    <h3>What makes a good FAQ question?</h3>
+    <ul>
+      <li>Real questions your customers actually ask — not what you wish they'd ask</li>
+      <li>Questions with specific, answerable answers — not "why choose us" type vagueness</li>
+      <li>Questions that match phrases people type into search engines ("how much does X cost", "how long does X take", "do I need to Y before Z")</li>
+      <li>Questions that reveal your expertise without requiring a three-page essay to answer</li>
+    </ul>
+
+    <h3>What makes a good FAQ answer?</h3>
+    <ul>
+      <li><strong>The direct answer in the first sentence.</strong> "Yes, all our engineers are Gas Safe registered." Not "There are several regulatory frameworks governing gas work in the UK..." — AI will cite the first sentence. Make it count.</li>
+      <li>2–4 sentences total. Long enough to be useful, short enough to be extracted cleanly.</li>
+      <li>Specific numbers, timeframes, or certifications where relevant — these make answers citable as facts</li>
+      <li>No marketing language — "we pride ourselves on" is invisible to AI</li>
+    </ul>
+
+    <div class="takeaway">
+      <div class="tk-label">The key rule</div>
+      <p>Write every answer as if someone asked you that question at a networking event and you had 20 seconds to answer before moving on. Direct, specific, complete.</p>
+    </div>
+
+    <h2>The exact FAQPage schema code (copy and adapt)</h2>
+
+    <p>Here's a working FAQPage schema template. Replace the questions and answers with your own. Everything between the outer curly braces follows the same pattern — add or remove Q&A blocks as needed.</p>
+
+    <div class="code-block"><pre>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a boiler service cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard annual boiler service costs between £80
+         and £120 in most UK areas. Emergency or same-day services
+         typically cost £140–£180. Prices vary by boiler type and
+         engineer travel distance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a boiler service take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most boiler services take 45–90 minutes. Older boilers
+        or those that haven't been serviced recently may take slightly
+        longer. We'll let you know if we spot anything that needs
+        additional attention."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you need to be Gas Safe registered to service a boiler?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — it is a legal requirement in the UK for anyone
+        working on gas appliances to be Gas Safe registered. Always
+        ask to see your engineer's Gas Safe ID card before any work
+        begins. You can verify registration at gassaferegister.co.uk."
+      }
+    }
+  ]
+}
+&lt;/script&gt;</pre></div>
+
+    <h2>Where to put FAQ schema on your page</h2>
+
+    <p>The JSON-LD script tag goes inside your page's <code>&lt;head&gt;</code> section or anywhere in the <code>&lt;body&gt;</code> — both work equally well. The most important rule: <strong>the questions and answers in the schema must match visible content on the page</strong>. Google can and does penalise pages where the schema content differs from what a user actually sees.</p>
+
+    <p>This means you need two things: the FAQ content visible on the page (an FAQ section with the questions and answers) and the JSON-LD schema code labelling that same content. Both. Not just the schema with no visible FAQ, and not just the visible FAQ with no schema.</p>
+
+    <h2>How to verify your FAQ schema is working</h2>
+
+    <ol>
+      <li>Go to <strong>search.google.com/test/rich-results</strong> — Google's free Rich Results Test</li>
+      <li>Paste your page URL and click "Test URL"</li>
+      <li>Look for "FAQPage" in the detected structured data</li>
+      <li>If it shows questions and answers detected — your schema is valid</li>
+      <li>If there are errors, the tool will show you exactly which lines to fix</li>
+    </ol>
+
+    <p>Also check <a href="https://validator.schema.org" target="_blank" rel="noopener">validator.schema.org</a> — paste your JSON-LD code to check for syntax errors before you publish.</p>
+
+    <h2>How to add FAQ schema without coding (WordPress users)</h2>
+
+    <p>If you use WordPress, you can add FAQPage schema without touching any code:</p>
+
+    <ul>
+      <li><strong>Rank Math</strong> (free) — includes FAQ block in the WordPress editor with automatic schema generation</li>
+      <li><strong>Yoast SEO Premium</strong> — FAQ and How-To blocks with schema output</li>
+      <li><strong>Schema Pro</strong> — dedicated schema plugin supporting all types including FAQPage</li>
+    </ul>
+
+    <p>For non-WordPress sites, the manual JSON-LD approach above works on any platform. If your website was built by WeLaunchd, <a href="https://welaunchd.com" target="_blank" rel="noopener">LocalBusiness and FAQPage schema are included as standard</a> — you don't need to add anything.</p>
+
+    <h2>FAQ schema vs LocalBusiness schema — what's the difference?</h2>
+
+    <p>They're complementary, not competing. LocalBusiness schema tells AI who your business is — your name, address, phone, hours, services. FAQPage schema tells AI what your business knows — the specific questions you can answer about your trade and how you operate.</p>
+
+    <p>For maximum AI visibility, <a href="/articles/structured-data-types-ai-citations.html">you need both types</a>. LocalBusiness schema for your homepage. FAQPage schema on your homepage or FAQ page. Together they give AI tools the complete picture: who you are, where you are, and what you can do.</p>
+
+    <div class="ass-cta">
+      <div class="label">Go deeper</div>
+      <h3>Module 1: Why Local Search Is Going AI — includes full schema markup guidance</h3>
+      <p>The complete beginner-friendly guide to understanding what's changed in local search, including the exact LocalBusiness and FAQPage schema to add to your site.</p>
+      <div class="price">£9 <small>instant download · 28 pages</small></div>
+      <a href="/guides/" class="btn btn-teal">Get the full series &rarr;</a>
+    </div>
+
+    <hr class="divider">
+
+    <div class="faq-section">
+      <h2>Frequently asked questions about FAQ schema</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">What is FAQ schema (FAQPage schema)?</div>
+        <div class="faq-a">FAQPage schema is structured code (JSON-LD) added to a webpage that explicitly labels question-and-answer content in a machine-readable format. Instead of AI tools having to guess which text on your page is a question and which is the answer, FAQPage schema tells them precisely. Pages with it are cited significantly more often in AI-generated answers.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does FAQ schema still work in 2026?</div>
+        <div class="faq-a">Yes — for AI search visibility, FAQ schema is more valuable in 2026 than ever. Google reduced FAQ rich result displays in organic search in 2023, but FAQPage schema remains one of the most powerful signals for AI Overviews, ChatGPT citations, and Perplexity results. Sites with FAQPage schema appear in 47% more Perplexity AI responses than those without.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How many questions should I include in FAQ schema?</div>
+        <div class="faq-a">Between 4 and 8 questions is optimal for most business websites. Focus on questions your customers genuinely ask — about pricing, process, qualifications, timing, or common problems in your trade.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do I need a developer to add FAQ schema?</div>
+        <div class="faq-a">Not necessarily. WordPress plugins like Rank Math handle it without coding. For any website, you can generate JSON-LD code using Google's Structured Data Markup Helper (free), paste it into your page HTML, and verify with the Rich Results Test. It takes about 20–30 minutes for a non-technical user.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What is the difference between FAQ schema and LocalBusiness schema?</div>
+        <div class="faq-a">LocalBusiness schema marks up your business facts — name, address, phone, hours. FAQPage schema marks up question-and-answer content. Both serve AI visibility but in different ways. For maximum AI citations, you need both — they complement each other rather than replacing each other.</div>
+      </div>
+    </div>
+
+  </article>
+
+  <div class="related">
+    <h2>Related articles</h2>
+    <div class="related-grid">
+      <a href="/articles/how-to-get-cited-by-chatgpt-step-by-step.html" class="rel-card">
+        <div class="rel-cat">Getting started</div>
+        <h3>How to Get Your Business Cited by ChatGPT: Step-by-Step Guide for 2026</h3>
+      </a>
+      <a href="/articles/structured-data-types-ai-citations.html" class="rel-card">
+        <div class="rel-cat">Getting started</div>
+        <h3>The 5 Structured Data Types That Make AI Cite Your Business First</h3>
+      </a>
+      <a href="/articles/why-your-business-is-invisible-to-chatgpt.html" class="rel-card">
+        <div class="rel-cat">Getting started</div>
+        <h3>Why Your Business Is Invisible to ChatGPT Right Now</h3>
+      </a>
+      <a href="/articles/local-ai-search-ranking-factors-2026.html" class="rel-card">
+        <div class="rel-cat">Local search</div>
+        <h3>The 8 Ranking Factors That Determine Your AI Search Visibility in 2026</h3>
+      </a>
+    </div>
+  </div>
+
+</div></main>
+
+<footer>
+<div class="wrap">
+  <div class="fcols">
+    <div>
+      <div class="logo"><span>AI Search</span> School</div>
+      <div class="ft">Teaching local businesses how to get found in the AI era — step by step, no jargon.</div>
+    </div>
+    <div class="fnav">
+      <div>
+        <h4>Site</h4>
+        <a href="/">Home</a>
+        <a href="/articles/">Articles</a>
+        <a href="/guides/">Guides</a>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <a href="/articles/what-is-faq-schema-google-ai-overviews.html">FAQ Schema</a>
+        <a href="/articles/how-to-get-cited-by-chatgpt-step-by-step.html">Get cited by ChatGPT</a>
+        <a href="https://welaunchd.com" target="_blank" rel="noopener">WeLaunchd</a>
+      </div>
+    </div>
+  </div>
+  <div class="fbot">
+    <span>© 2026 AI Search School. All rights reserved.</span>
+    <span>aisearchschool.com</span>
+  </div>
+</div>
+</footer>
+</body>
+</html>

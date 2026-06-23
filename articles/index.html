@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Articles — AI Search School</title>
+<meta name="description" content="Free guides on getting found in AI search — ChatGPT, Perplexity, Google AI Overviews and more. Pick your topic and start reading.">
+<link rel="canonical" href="https://aisearchschool.com/articles/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2307091f'/%3E%3Ctext x='50' y='70' font-family='Arial,sans-serif' font-size='62' font-weight='bold' text-anchor='middle' fill='%2300B4D8'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --teal:#00B4D8;--teal2:#0095b3;--violet:#5B2BFF;--green:#00C98D;
+  --ink:#07091f;--dark:#0d1035;--grey:#5a6178;--soft:#8a90aa;
+  --line:rgba(0,180,216,0.15);--mist:#f5f9ff;
+  --hd:'Plus Jakarta Sans',sans-serif;--bd:'Inter',sans-serif;
+  --sh:0 4px 20px rgba(7,9,31,.08);--sh2:0 12px 40px rgba(0,180,216,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--bd);color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+
+/* Header */
+header{border-bottom:1px solid rgba(0,180,216,.12);background:var(--ink);position:sticky;top:0;z-index:50;}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px;}
+.logo{font-family:var(--hd);font-weight:800;font-size:20px;color:#fff;}
+.logo .la{color:var(--teal);}
+.nav-links{display:flex;align-items:center;gap:24px;}
+.nav-links a{font-family:var(--hd);font-weight:600;font-size:14px;color:rgba(255,255,255,.65);}
+.nav-links a:hover{color:#fff;}
+.btn{display:inline-flex;align-items:center;font-family:var(--hd);font-weight:700;font-size:14px;padding:10px 22px;border-radius:999px;border:0;cursor:pointer;transition:transform .14s;}
+.btn:hover{transform:translateY(-1px);}
+.btn-teal{background:var(--teal);color:var(--ink);}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--ink) 0%,#0f1240 60%,#071628 100%);padding:56px 0 48px;border-bottom:2px solid rgba(0,180,216,.12);position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-140px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(0,180,216,.18) 0%,transparent 65%);border-radius:50%;}
+.hero::after{content:'';position:absolute;bottom:-80px;left:-60px;width:320px;height:320px;background:radial-gradient(circle,rgba(91,43,255,.15) 0%,transparent 65%);border-radius:50%;}
+.hero-inner{position:relative;z-index:2;}
+.eyebrow{font-family:var(--hd);font-weight:700;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--teal);margin-bottom:14px;}
+.hero h1{font-family:var(--hd);font-weight:800;font-size:42px;letter-spacing:-.8px;line-height:1.08;margin-bottom:14px;color:#fff;}
+.hero h1 .hl{color:var(--teal);}
+.hero .lead{font-size:17px;color:rgba(255,255,255,.55);line-height:1.65;max-width:540px;margin-bottom:28px;}
+.hero-stats{display:flex;gap:12px;flex-wrap:wrap;}
+.hstat{background:rgba(255,255,255,.05);border:1px solid rgba(0,180,216,.2);border-radius:12px;padding:14px 20px;text-align:center;}
+.hstat .num{font-family:var(--hd);font-weight:800;font-size:24px;color:var(--teal);line-height:1;}
+.hstat .lbl{font-size:12px;color:rgba(255,255,255,.4);margin-top:4px;}
+
+/* Category nav */
+.cat-section{padding:32px 0 0;background:#fff;}
+.cat-label{font-family:var(--hd);font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--soft);margin-bottom:14px;}
+.cat-tabs{display:flex;gap:8px;flex-wrap:wrap;}
+.cat-tab{display:flex;flex-direction:column;gap:4px;background:#fff;border:1.5px solid #e8eaf2;border-radius:14px;padding:12px 18px;cursor:pointer;transition:all .16s;text-align:left;}
+.cat-tab:hover{border-color:rgba(0,180,216,.35);background:var(--mist);}
+.cat-tab.active{background:var(--ink);border-color:var(--ink);color:#fff;}
+.cat-tab .ct-name{font-family:var(--hd);font-weight:700;font-size:14px;color:var(--ink);}
+.cat-tab.active .ct-name{color:#fff;}
+.cat-tab .ct-desc{font-size:12px;color:var(--grey);line-height:1.4;}
+.cat-tab.active .ct-desc{color:rgba(255,255,255,0.6);}
+.cat-tab .ct-count{font-size:11px;font-weight:600;color:var(--soft);margin-top:2px;}
+.cat-tab.active .ct-count{color:rgba(255,255,255,0.5);}
+
+/* Category description panel */
+.cat-context{margin:18px 0 0;padding:15px 20px;background:#f0fafd;border-left:3px solid var(--teal);border-radius:0 10px 10px 0;font-size:15px;color:var(--grey);line-height:1.6;display:none;}
+.cat-context.visible{display:block;}
+
+/* Divider */
+.divider{border:0;border-top:1px solid #e8eaf2;margin:22px 0 28px;}
+
+/* Result bar */
+.result-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;}
+.result-count{font-family:var(--hd);font-weight:700;font-size:13px;color:var(--soft);}
+.sort-note{font-size:12px;color:var(--soft);}
+
+/* Grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;padding-bottom:70px;}
+
+/* Card */
+.acard{background:#fff;border:1px solid #e8eaf2;border-radius:16px;overflow:hidden;box-shadow:var(--sh);transition:transform .16s,box-shadow .16s;display:flex;flex-direction:column;}
+.acard:hover{transform:translateY(-3px);box-shadow:var(--sh2);}
+.acard .bar{height:4px;background:linear-gradient(90deg,var(--teal),var(--violet));}
+.ab{padding:22px;flex:1;display:flex;flex-direction:column;}
+.card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.cat{font-family:var(--hd);font-weight:700;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);}
+.card-meta{display:flex;align-items:center;gap:8px;}
+.badge-new{background:linear-gradient(90deg,var(--teal),var(--green));color:var(--ink);font-family:var(--hd);font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:100px;}
+.badge-date{font-size:11px;color:var(--soft);}
+.acard h3{font-family:var(--hd);font-weight:800;font-size:17px;margin-bottom:8px;line-height:1.25;flex:1;}
+.acard p{font-size:13.5px;color:var(--grey);margin-bottom:16px;line-height:1.6;}
+.card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto;}
+.rl{font-family:var(--hd);font-weight:700;font-size:13px;color:var(--teal);}
+.read-time{font-size:12px;color:var(--soft);}
+
+/* Featured guide CTA */
+.guide-cta{background:linear-gradient(135deg,var(--ink),#0f1240);border-radius:20px;padding:40px 48px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:32px;margin:0 0 36px;flex-wrap:wrap;}
+.guide-cta-text h2{font-family:var(--hd);font-weight:800;font-size:24px;margin-bottom:8px;}
+.guide-cta-text p{color:rgba(255,255,255,.55);font-size:15px;line-height:1.6;max-width:440px;}
+.guide-cta .btn{background:var(--teal);color:var(--ink);white-space:nowrap;}
+
+/* CTA */
+.cta{background:var(--mist);border:1px solid rgba(0,180,216,.15);border-radius:20px;padding:40px 48px;color:var(--ink);text-align:center;margin:0 0 70px;}
+.cta h2{font-family:var(--hd);font-weight:800;font-size:26px;margin-bottom:10px;}
+.cta p{color:var(--grey);max-width:440px;margin:0 auto 20px;font-size:15px;line-height:1.6;}
+.cta .btn{background:var(--ink);color:#fff;}
+
+/* No results */
+.no-results{display:none;text-align:center;padding:60px 20px;color:var(--grey);}
+.no-results.show{display:block;}
+
+footer{background:var(--ink);color:#8086a6;padding:40px 0 22px;}
+.frow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:20px;}
+footer .logo{color:#fff;}
+.flinks{display:flex;gap:22px;flex-wrap:wrap;}
+.flinks a{font-size:13.5px;color:#8086a6;}
+.flinks a:hover{color:#fff;}
+.fbot{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-size:12px;}
+
+@media(max-width:700px){
+  .hero h1{font-size:30px;}
+  .cat-tab .ct-desc{display:none;}
+  .nav-links{display:none;}
+  .hstat{padding:10px 14px;}
+  .guide-cta{flex-direction:column;padding:26px;}
+  .cta{padding:28px 20px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="/" class="logo"><span class="la">AI Search</span> School</a>
+      <div class="nav-links">
+        <a href="/articles/">Articles</a>
+        <a href="/guides/">Guides</a>
+        <a href="https://welaunchd.com">Get your site built</a>
+      </div>
+      <a href="/guides/" class="btn btn-teal">Browse guides →</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="eyebrow">Free to read · No sign-up · Updated weekly</div>
+      <h1>Everything you need to know<br>about <span class="hl">AI search.</span></h1>
+      <p class="lead">Pick your topic below. Whether you're completely new to this or you already understand the basics and want to go deeper — filter to what applies to you.</p>
+      <div class="hero-stats">
+        <div class="hstat"><div class="num">9</div><div class="lbl">free articles</div></div>
+        <div class="hstat"><div class="num">6</div><div class="lbl">topics covered</div></div>
+        <div class="hstat"><div class="num">3</div><div class="lbl">new this week</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="cat-section">
+    <div class="cat-label">Filter by topic</div>
+    <div class="cat-tabs">
+      <button class="cat-tab active" data-filter="all" onclick="filterCat('all',this)">
+        <span class="ct-name">All articles</span>
+        <span class="ct-desc">Everything we've published</span>
+        <span class="ct-count">18 articles</span>
+      </button>
+      <button class="cat-tab" data-filter="start" onclick="filterCat('start',this)">
+        <span class="ct-name">Start here</span>
+        <span class="ct-desc">New to AI search? Begin here</span>
+        <span class="ct-count">8 articles</span>
+      </button>
+      <button class="cat-tab" data-filter="local" onclick="filterCat('local',this)">
+        <span class="ct-name">Local Business</span>
+        <span class="ct-desc">Guides written for local businesses</span>
+        <span class="ct-count">2 articles</span>
+      </button>
+      <button class="cat-tab" data-filter="tools" onclick="filterCat('tools',this)">
+        <span class="ct-name">Tools &amp; Platforms</span>
+        <span class="ct-desc">ChatGPT, Perplexity &amp; how they differ</span>
+        <span class="ct-count">4 articles</span>
+      </button>
+      <button class="cat-tab" data-filter="google" onclick="filterCat('google',this)">
+        <span class="ct-name">Google AI</span>
+        <span class="ct-desc">AI Overviews, Gemini &amp; Google search</span>
+        <span class="ct-count">2 articles</span>
+      </button>
+      <button class="cat-tab" data-filter="ecom" onclick="filterCat('ecom',this)">
+        <span class="ct-name">E-commerce</span>
+        <span class="ct-desc">For online stores and Shopify</span>
+        <span class="ct-count">3 articles</span>
+      </button>
+    </div>
+    <div class="cat-context" id="cat-context"></div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="result-row">
+    <span class="result-count" id="result-count">Showing all 21 articles</span>
+    <span class="sort-note">Newest first</span>
+  </div>
+
+  <div class="grid" id="grid">
+
+    <!-- 23 Jun 2026 -->
+    <a class="acard" href="how-to-do-a-local-ai-search-audit.html" data-cat="local" data-date="20260623">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Local Business</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">23 Jun 2026</span></div>
+        </div>
+        <h2>How to do a local AI search audit in 30 minutes</h2>
+        <p>A structured 5-step check of how visible your business is to ChatGPT, Perplexity, and Google AI — and what to fix first.</p>
+        <div class="card-footer"><span class="read-time">8 min read</span><span class="arrow">→</span></div>
+      </div>
+    </a>
+    <a class="acard" href="why-your-business-name-and-nap-matter-for-ai-search.html" data-cat="start" data-date="20260623">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Getting Started</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">23 Jun 2026</span></div>
+        </div>
+        <h2>Why your business name and NAP matter for AI search visibility</h2>
+        <p>Your Name, Address, and Phone number must match exactly everywhere online. Here's why inconsistency tanks AI visibility — and how to fix it.</p>
+        <div class="card-footer"><span class="read-time">7 min read</span><span class="arrow">→</span></div>
+      </div>
+    </a>
+    <a class="acard" href="how-to-write-website-content-that-ai-tools-cite.html" data-cat="start" data-date="20260623">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Getting Started</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">23 Jun 2026</span></div>
+        </div>
+        <h2>How to write website content that AI tools actually cite</h2>
+        <p>7 characteristics that make content citable by ChatGPT and Perplexity — with before/after examples and a quick-win action plan.</p>
+        <div class="card-footer"><span class="read-time">9 min read</span><span class="arrow">→</span></div>
+      </div>
+    </a>
+
+    <!-- 22 Jun 2026 -->
+    <a class="acard" href="how-to-get-cited-by-chatgpt-step-by-step.html" data-cat="start" data-date="20260622">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Getting started</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">22 Jun 2026</span></div>
+        </div>
+        <h3>How to Get Your Business Cited by ChatGPT: A Step-by-Step Guide for 2026</h3>
+        <p>ChatGPT cites businesses based on review content, consistent directory listings, and structured website data. Here's the exact process — 6 steps in order of impact.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">10 min read</span></div>
+      </div>
+    </a>
+
+    <a class="acard" href="what-is-faq-schema-google-ai-overviews.html" data-cat="start" data-date="20260622">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Getting started</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">22 Jun 2026</span></div>
+        </div>
+        <h3>What Is FAQ Schema and Why It Gets You Into Google AI Overviews</h3>
+        <p>FAQPage schema labels your Q&amp;A content for AI tools. Pages with it appear in 47% more AI responses. Here's what it is, how to write it, and how to add it in 30 minutes.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">9 min read</span></div>
+      </div>
+    </a>
+
+    <a class="acard" href="structured-data-types-ai-citations.html" data-cat="start" data-date="20260622">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Getting started</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">22 Jun 2026</span></div>
+        </div>
+        <h3>The 5 Structured Data Types That Make AI Cite Your Business First</h3>
+        <p>Schema.org has 800+ types. These 5 — LocalBusiness, FAQPage, Article, AggregateRating, BreadcrumbList — do 90% of the work for local business AI visibility.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">9 min read</span></div>
+      </div>
+    </a>
+
+    <!-- 21 Jun 2026 -->
+    <a class="acard" href="ecommerce-brand-description-ai-search.html" data-cat="ecom" data-date="20260621">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">E-commerce</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">21 Jun 2026</span></div>
+        </div>
+        <h3>Why your brand description matters more than your product listings in AI search</h3>
+        <p>AI shopping tools recommend brands, not products. If ChatGPT can't describe your brand in one sentence, you won't get recommended.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">7 min read</span></div>
+      </div>
+    </a>
+
+    <a class="acard" href="local-trades-ai-search-recommendations.html" data-cat="local" data-date="20260621">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Local Business</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">21 Jun 2026</span></div>
+        </div>
+        <h3>How local trades businesses get recommended by AI in 2026</h3>
+        <p>Plumbers, electricians, builders — ChatGPT is recommending trades businesses, but only those that have done 5 specific things. Here's what they are.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">7 min read</span></div>
+      </div>
+    </a>
+
+    <a class="acard" href="topical-authority-ai-search-2026.html" data-cat="start" data-date="20260621">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Start here</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">21 Jun 2026</span></div>
+        </div>
+        <h3>Topical authority and AI search: how to make AI see you as the expert</h3>
+        <p>AI cites the source it trusts most on a topic. Here's how to build topical authority so ChatGPT and Perplexity recommend you instead of your competitors.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">8 min read</span></div>
+      </div>
+    </a>
+
+    <!-- 20 Jun 2026 -->
+    <a class="acard" href="chatgpt-product-recommendations-ecommerce.html" data-cat="ecom" data-date="20260620">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">E-commerce</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">20 Jun 2026</span></div>
+        </div>
+        <h3>How to get your products recommended by ChatGPT</h3>
+        <p>84 million shopping questions hit ChatGPT every week. Here's how to make sure your products are the ones it recommends.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">7 min read</span></div>
+      </div>
+    </a>
+
+    <a class="acard" href="google-ai-overviews-local-business-2026.html" data-cat="google" data-date="20260620">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Google AI</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">20 Jun 2026</span></div>
+        </div>
+        <h3>How local businesses can appear in Google AI Overviews in 2026</h3>
+        <p>Google AI Overviews now appear on 15% of all searches. Here's what actually gets local businesses cited in them.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">7 min read</span></div>
+      </div>
+    </a>
+
+    <a class="acard" href="how-to-get-cited-perplexity-ai-2026.html" data-cat="tools" data-date="20260620">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Tools &amp; Platforms</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">20 Jun 2026</span></div>
+        </div>
+        <h3>How to get cited by Perplexity AI in 2026</h3>
+        <p>Perplexity cites its sources with clickable links in every answer. Here are the 9 signals that get your content included.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">6 min read</span></div>
+      </div>
+    </a>
+
+    <!-- 19 Jun 2026 -->
+    <a class="acard" href="cross-platform-presence-ai-search.html" data-cat="start" data-date="20260619">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Start here</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">19 Jun 2026</span></div>
+        </div>
+        <h3>How to build a cross-platform presence that AI search trusts</h3>
+        <p>AI only recommends businesses it can verify from multiple independent sources. Here's exactly how to build that network — step by step.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">8 min read</span></div>
+      </div>
+    </a>
+
+    <a class="acard" href="what-is-geo-generative-engine-optimisation.html" data-cat="start" data-date="20260619">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Start here</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">19 Jun 2026</span></div>
+        </div>
+        <h3>What is GEO? Generative Engine Optimisation explained for beginners</h3>
+        <p>The plain-English guide to GEO — what it is, why it's different from SEO, and where to start if you've never heard of it before.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">6 min read</span></div>
+      </div>
+    </a>
+
+    <a class="acard" href="chatgpt-vs-perplexity-citations.html" data-cat="tools" data-date="20260619">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Tools &amp; Platforms</span>
+          <div class="card-meta"><span class="badge-new">New</span><span class="badge-date">19 Jun 2026</span></div>
+        </div>
+        <h3>ChatGPT vs Perplexity: how citations work differently (and what to do about it)</h3>
+        <p>Perplexity cites 22× more sources than ChatGPT. Here's why — and how to optimise for both without doubling your effort.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">7 min read</span></div>
+      </div>
+    </a>
+
+    <!-- Earlier -->
+    <a class="acard" href="why-ai-search-ignores-your-business.html" data-cat="start" data-date="20260601">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Start here</span>
+          <div class="card-meta"><span class="badge-date">Jun 2026</span></div>
+        </div>
+        <h3>Why AI search ignores your business (and the fix is simpler than you think)</h3>
+        <p>The structural reasons AI skips most businesses — and the three things you can change this week that make the biggest difference.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">6 min read</span></div>
+      </div>
+    </a>
+
+    <a class="acard" href="local-business-ai-visibility.html" data-cat="local" data-date="20260601">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Local Business</span>
+          <div class="card-meta"><span class="badge-date">Jun 2026</span></div>
+        </div>
+        <h3>The local business guide to AI visibility</h3>
+        <p>A practical guide for trades, shops, and service businesses — the signals AI looks for when deciding who to recommend in your area.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">7 min read</span></div>
+      </div>
+    </a>
+
+    <a class="acard" href="perplexity-visibility-guide.html" data-cat="tools" data-date="20260601">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Tools &amp; Platforms</span>
+          <div class="card-meta"><span class="badge-date">Jun 2026</span></div>
+        </div>
+        <h3>How to get your business cited by Perplexity</h3>
+        <p>Perplexity browses the live web for every query — meaning the changes you make today can show results within days, not months.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">6 min read</span></div>
+      </div>
+    </a>
+
+    <a class="acard" href="google-ai-overviews-explained.html" data-cat="google" data-date="20260601">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Google AI</span>
+          <div class="card-meta"><span class="badge-date">Jun 2026</span></div>
+        </div>
+        <h3>Google AI Overviews explained — and how to get cited in one</h3>
+        <p>AI Overviews appear above Google results on 48% of searches. Here's what they are, how they pick sources, and how to be one of them.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">7 min read</span></div>
+      </div>
+    </a>
+
+    <a class="acard" href="youtube-channel-ai-search.html" data-cat="tools" data-date="20260601">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">Tools &amp; Platforms</span>
+          <div class="card-meta"><span class="badge-date">Jun 2026</span></div>
+        </div>
+        <h3>Why your YouTube channel matters for AI search visibility</h3>
+        <p>YouTube transcripts are one of the most underused content signals for AI citations. Here's how to use them deliberately.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">5 min read</span></div>
+      </div>
+    </a>
+
+    <a class="acard" href="get-your-shopify-store-visible-on-ai.html" data-cat="ecom" data-date="20260601">
+      <div class="bar"></div>
+      <div class="ab">
+        <div class="card-top">
+          <span class="cat">E-commerce</span>
+          <div class="card-meta"><span class="badge-date">Jun 2026</span></div>
+        </div>
+        <h3>How to get your Shopify store visible in AI search</h3>
+        <p>The specific changes that help e-commerce stores get recommended by ChatGPT and Perplexity — product pages, reviews, and structured data.</p>
+        <div class="card-footer"><span class="rl">Read article →</span><span class="read-time">8 min read</span></div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="no-results" id="no-results">No articles in this category yet — we add new ones every week.</div>
+
+  <div class="guide-cta">
+    <div class="guide-cta-text">
+      <h2>Ready to go deeper?</h2>
+      <p>Our paid guides are 26-35 pages each — beginner-friendly, no jargon, written for business owners not tech people. Start with Module 1 for £9.</p>
+    </div>
+    <a href="/guides/" class="btn btn-teal">Browse paid guides →</a>
+  </div>
+
+  <div class="cta">
+    <h2>Want your website built for AI search?</h2>
+    <p>WeLaunchd builds sites that get found — by Google, ChatGPT, and Perplexity. £499 total, £99 to start.</p>
+    <a href="https://welaunchd.com/#price" class="btn">Find out more →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="frow">
+      <a href="/" class="logo"><span class="la">AI Search</span> School</a>
+      <div class="flinks">
+        <a href="/">Home</a>
+        <a href="/articles/">Articles</a>
+        <a href="/guides/">Guides</a>
+        <a href="https://welaunchd.com">WeLaunchd</a>
+      </div>
+    </div>
+    <div class="fbot">© 2026 AI Search School. Learn it. Apply it. Get found.</div>
+  </div>
+</footer>
+
+<script>
+const catDescriptions = {
+  all:    '',
+  start:  "New to AI search? These articles give you the foundation — what GEO is, why most businesses are invisible to AI, and how to build the presence AI systems trust. Start here if you're not sure where to begin.",
+  local:  "Written specifically for local service businesses — plumbers, electricians, restaurants, salons, and any business serving customers in a particular area. The signals AI uses for local recommendations are different from general search.",
+  tools:  "ChatGPT, Perplexity, and similar AI tools each work differently. These articles break down the differences so you understand which platform to prioritise and what each one needs to recommend you.",
+  google: "Google is rolling AI deeper into search every month. These articles cover AI Overviews, Gemini, and how Google's AI features interact with your content — and what you can do to be cited.",
+  ecom:   "For online stores and Shopify merchants — the specific AI visibility signals that matter for e-commerce, from product page structure to review strategy."
+};
+
+function filterCat(cat, btn) {
+  document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const cards = document.querySelectorAll('.acard');
+  let visible = 0;
+  cards.forEach(c => {
+    const show = cat === 'all' || c.dataset.cat === cat;
+    c.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+
+  const countEl = document.getElementById('result-count');
+  countEl.textContent = cat === 'all'
+    ? 'Showing all ' + visible + ' articles'
+    : 'Showing ' + visible + ' article' + (visible !== 1 ? 's' : '');
+
+  document.getElementById('no-results').classList.toggle('show', visible === 0);
+
+  const ctx = document.getElementById('cat-context');
+  if (cat !== 'all' && catDescriptions[cat]) {
+    ctx.textContent = catDescriptions[cat];
+    ctx.classList.add('visible');
+  } else {
+    ctx.classList.remove('visible');
+  }
+}
+</script>
+</body>
+</html>

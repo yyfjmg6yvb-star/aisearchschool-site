@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Perplexity Decides What It Recommends — and How to Be on the List | AI Search School</title>
+<meta name="description" content="Perplexity cites sources in real-time from the open web. Here's exactly how it decides which businesses and creators make the cut — and what you can do about it.">
+<link rel="canonical" href="https://aisearchschool.com/articles/perplexity-visibility-guide.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230D1030'/%3E%3Ctext x='50' y='70' font-family='Arial,sans-serif' font-size='62' font-weight='bold' text-anchor='middle' fill='%2300B4D8'%3ES%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Perplexity Decides What It Recommends — and How to Be on the List">
+<meta property="og:description" content="Perplexity cites sources in real-time from the open web. Here's exactly how it decides which businesses and creators make the cut.">
+<meta property="og:url" content="https://aisearchschool.com/articles/perplexity-visibility-guide.html">
+<meta property="og:site_name" content="AI Search School">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How Perplexity Decides What It Recommends — and How to Be on the List","description":"Perplexity cites sources in real-time. Here's exactly how it decides which businesses and creators get recommended — and what you can do to be one of them.","url":"https://aisearchschool.com/articles/perplexity-visibility-guide.html","datePublished":"2026-06-19","author":{"@type":"Person","name":"Chris","url":"https://welaunchd.com"},"publisher":{"@type":"Organization","name":"AI Search School","url":"https://aisearchschool.com"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>:root{--c:#00B4D8;--cd:#0077A3;--cl:#E0F7FC;--ink:#0D1030;--grey:#4a5270;--soft:#9aa0bc;--line:#e8eaf5;--mist:#F7FEFF;--white:#fff;--hd:'Plus Jakarta Sans',sans-serif;--bd:'Inter',sans-serif;--sh:0 20px 52px rgba(0,180,216,.12);--sh2:0 6px 20px rgba(13,16,48,.07);--r:16px;}*{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}body{font-family:var(--bd);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased;line-height:1.7;}a{text-decoration:none;color:inherit;}.wrap{max-width:1100px;margin:0 auto;padding:0 22px;}.art-wrap{max-width:720px;margin:0 auto;padding:0 22px;}::selection{background:var(--c);color:#fff;}h1,h2,h3{font-family:var(--hd);font-weight:800;line-height:1.1;letter-spacing:-.4px;}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--hd);font-weight:700;font-size:14px;padding:11px 20px;border-radius:999px;border:0;cursor:pointer;transition:transform .14s;white-space:nowrap;text-decoration:none;}.btn:hover{transform:translateY(-2px);}.btn-cyan{background:var(--c);color:#fff;}.btn-ink{background:var(--ink);color:#fff;}header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);}nav{display:flex;align-items:center;justify-content:space-between;height:64px;}.logo{font-family:var(--hd);font-weight:800;font-size:19px;color:var(--ink);}.logo .lc{color:var(--c);}.nl{display:flex;align-items:center;gap:22px;}.nl a{font-family:var(--hd);font-weight:600;font-size:14px;color:var(--grey);}.nl a:hover{color:var(--c);}.burger{display:none;background:none;border:0;font-size:22px;cursor:pointer;color:var(--ink);}@media(max-width:820px){.nl{display:none;}.burger{display:block;}.nl.open{display:flex;position:absolute;top:64px;left:0;right:0;background:#fff;flex-direction:column;padding:14px 22px;gap:13px;border-bottom:1px solid var(--line);box-shadow:var(--sh2);z-index:60;}}.breadcrumb{padding:18px 0 0;font-size:13px;color:var(--soft);}.breadcrumb a{color:var(--soft);}.breadcrumb span{margin:0 6px;}.art-header{padding:36px 0 44px;}.art-cat{font-family:var(--hd);font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--c);margin-bottom:14px;}.art-header h1{font-family:var(--hd);font-weight:800;font-size:40px;line-height:1.1;letter-spacing:-.5px;margin-bottom:18px;}.art-meta{display:flex;align-items:center;gap:16px;font-size:13.5px;color:var(--soft);flex-wrap:wrap;}.art-meta .author{font-weight:600;color:var(--grey);}.art-meta .dot{color:var(--line);}.feat-img{margin:0 0 36px;border-radius:var(--r);overflow:hidden;}.art-body{padding-bottom:60px;}.art-body p{font-size:16.5px;color:var(--grey);margin-bottom:22px;line-height:1.74;}.art-body h2{font-family:var(--hd);font-weight:800;font-size:26px;color:var(--ink);margin:42px 0 16px;letter-spacing:-.3px;}.art-body h3{font-family:var(--hd);font-weight:700;font-size:19px;color:var(--ink);margin:30px 0 12px;}.art-body ul,.art-body ol{margin:0 0 22px;padding-left:0;list-style:none;}.art-body ul li,.art-body ol li{font-size:16px;color:var(--grey);padding:8px 0 8px 26px;border-bottom:1px solid var(--line);position:relative;line-height:1.6;}.art-body ul li:last-child,.art-body ol li:last-child{border-bottom:0;}.art-body ul li::before{content:"\2713";position:absolute;left:0;color:var(--c);font-weight:800;}.art-body ol{counter-reset:ol;}.art-body ol li{counter-increment:ol;}.art-body ol li::before{content:counter(ol)".";position:absolute;left:0;color:var(--c);font-weight:800;font-family:var(--hd);}.art-body strong{color:var(--ink);font-weight:600;}.art-body a{color:var(--c);font-weight:600;}.art-body blockquote{background:var(--cl);border-left:4px solid var(--c);border-radius:0 var(--r) var(--r) 0;padding:20px 22px;margin:26px 0;font-family:var(--hd);font-weight:700;font-size:17px;color:var(--cd);line-height:1.45;}.art-body .divider{border:0;border-top:1px solid var(--line);margin:40px 0;}.takeaway{background:var(--mist);border:1px solid rgba(0,180,216,.25);border-radius:var(--r);padding:22px 24px;margin:30px 0;}.takeaway .tk-label{font-family:var(--hd);font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--c);margin-bottom:10px;}.takeaway p{font-size:15px;color:var(--ink);margin:0;line-height:1.6;}.guide-cta{background:var(--ink);border-radius:22px;padding:34px 32px;margin:44px 0;color:#fff;position:relative;overflow:hidden;}.guide-cta::before{content:'';position:absolute;inset:-30%;background:radial-gradient(40% 45% at 82% 15%,rgba(0,180,216,.35),transparent 60%);pointer-events:none;}.guide-cta>*{position:relative;}.guide-cta .gc-label{font-family:var(--hd);font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--c);margin-bottom:10px;}.guide-cta h3{font-size:21px;color:#fff;margin-bottom:8px;}.guide-cta p{font-size:14px;color:#c3d4e0;margin-bottom:18px;}.guide-cta .price{font-family:var(--hd);font-weight:800;font-size:26px;color:#fff;margin-bottom:16px;}.guide-cta .price small{font-size:13px;color:#9ab0be;font-weight:600;}.wl-cta{background:var(--mist);border:1px solid var(--line);border-radius:var(--r);padding:26px 28px;margin:44px 0;display:flex;gap:20px;align-items:center;flex-wrap:wrap;}.wl-cta .wl-text{flex:1;min-width:200px;}.wl-cta .wl-text p{font-size:14.5px;color:var(--grey);margin:0;line-height:1.6;}.wl-logo-big{font-family:var(--hd);font-weight:800;font-size:17px;color:var(--ink);margin-bottom:5px;}.wl-logo-big span{color:#5B2BFF;}.related{margin-top:56px;padding-top:40px;border-top:1px solid var(--line);}.related h2{font-family:var(--hd);font-weight:800;font-size:20px;margin-bottom:20px;}.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}.rel-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:var(--sh2);transition:transform .14s;display:block;}.rel-card:hover{transform:translateY(-2px);}.rel-cat{font-family:var(--hd);font-weight:700;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--c);margin-bottom:7px;}.rel-card h3{font-size:15px;font-family:var(--hd);font-weight:700;color:var(--ink);line-height:1.3;}@media(max-width:580px){.related-grid{grid-template-columns:1fr;}.art-header h1{font-size:30px;}}footer{background:var(--ink);color:#c3d4e0;padding:44px 0 22px;margin-top:60px;}.fcols{display:flex;gap:32px;flex-wrap:wrap;justify-content:space-between;margin-bottom:30px;}footer .logo{font-size:17px;}footer .ft{margin-top:9px;font-size:13px;color:#9ab0be;max-width:240px;line-height:1.55;}.fnav{display:flex;gap:40px;flex-wrap:wrap;}.fnav h4{font-family:var(--hd);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;margin-bottom:10px;}.fnav a{display:block;font-size:13px;color:#c3d4e0;margin-bottom:7px;}.fnav a:hover{color:#fff;}.fbot{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;font-size:12px;color:#7a90a0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:7px;}</style>
+</head>
+<body>
+<header>
+<div class="wrap"><nav>
+  <a href="/" class="logo">AI Search <span class="lc">School</span></a>
+  <div class="nl" id="nav">
+    <a href="/articles/">Articles</a><a href="/#guides">Guides</a><a href="/#community">Community</a>
+    <a href="https://welaunchd.com" target="_blank" rel="noopener" style="color:#5B2BFF;font-weight:700;">WeLaunchd ↗</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <a href="https://www.skool.com/ai-search-school-6151/about" class="btn btn-cyan" target="_blank" rel="noopener">Join free &rarr;</a>
+    <button class="burger" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+  </div>
+</nav></div>
+</header>
+<main>
+<div class="art-wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>›</span><a href="/articles/">Articles</a><span>›</span>Perplexity
+  </nav>
+  <header class="art-header">
+    <div class="art-cat">Perplexity</div>
+    <h1>How Perplexity Decides What It Recommends — and How to Be on the List</h1>
+    <div class="art-meta">
+      <span class="author">Chris &middot; June 2026</span><span class="dot">·</span><span>8 min read</span>
+    </div>
+  </header>
+
+  <div class="feat-img">
+    <svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+      <defs>
+        <radialGradient id="pg1" cx="50%" cy="50%" r="60%">
+          <stop offset="0%" stop-color="#1a1040" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#0D1030" stop-opacity="1"/>
+        </radialGradient>
+        <marker id="parr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="#20B2AA"/>
+        </marker>
+      </defs>
+      <rect width="720" height="280" fill="url(#pg1)"/>
+      <!-- Perplexity icon (abstract) -->
+      <circle cx="90" cy="110" r="44" fill="none" stroke="#20B2AA" stroke-width="2.5" opacity="0.8"/>
+      <circle cx="90" cy="110" r="22" fill="#20B2AA" opacity="0.3"/>
+      <circle cx="90" cy="110" r="8" fill="#20B2AA"/>
+      <text x="90" y="170" font-family="Arial" font-weight="bold" font-size="12" fill="#20B2AA" text-anchor="middle">Perplexity</text>
+      <!-- Process arrows -->
+      <path d="M148 110 L230 110" stroke="#20B2AA" stroke-width="2" marker-end="url(#parr)"/>
+      <!-- Middle box: real-time web crawl -->
+      <rect x="238" y="76" width="160" height="68" rx="9" fill="rgba(32,178,170,0.1)" stroke="rgba(32,178,170,0.4)" stroke-width="1.2"/>
+      <text x="318" y="103" font-family="Arial" font-weight="bold" font-size="11" fill="#20B2AA" text-anchor="middle">Real-time web crawl</text>
+      <text x="318" y="121" font-family="Arial" font-size="10" fill="#c3d4e0" text-anchor="middle">Relevance · Authority</text>
+      <text x="318" y="136" font-family="Arial" font-size="10" fill="#c3d4e0" text-anchor="middle">Structure · Freshness</text>
+      <!-- Arrow to output -->
+      <path d="M400 110 L470 110" stroke="#20B2AA" stroke-width="2" marker-end="url(#parr)"/>
+      <!-- Output: citations box -->
+      <rect x="478" y="56" width="210" height="104" rx="9" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.35)" stroke-width="1.2"/>
+      <text x="498" y="79" font-family="Arial" font-weight="bold" font-size="10" fill="#00B4D8">Sources (3)</text>
+      <rect x="498" y="88" width="170" height="18" rx="4" fill="rgba(0,180,216,0.15)"/>
+      <text x="508" y="101" font-family="Arial" font-size="10" fill="#c3d4e0">[1] aisearchschool.com</text>
+      <rect x="498" y="110" width="170" height="18" rx="4" fill="rgba(255,255,255,0.04)"/>
+      <text x="508" y="123" font-family="Arial" font-size="10" fill="#9ab0bc">[2] someotherblog.com</text>
+      <rect x="498" y="132" width="170" height="18" rx="4" fill="rgba(255,255,255,0.04)"/>
+      <text x="508" y="145" font-family="Arial" font-size="10" fill="#9ab0bc">[3] medium.com/article</text>
+      <!-- Labels -->
+      <text x="360" y="220" font-family="Arial" font-size="12" fill="#9aa0bc" text-anchor="middle">You need your content to win on every signal Perplexity weighs</text>
+    </svg>
+  </div>
+
+  <article class="art-body">
+    <p>Perplexity AI is different from ChatGPT and Google in one crucial way: it cites its sources in real time, pulling from the live web on every query. There's no static training dataset to appear in — if Perplexity cites you, it's because it found your content on the web, evaluated it against several factors, and decided it was the best answer to include. Understanding those factors is how you get on the list.</p>
+
+    <h2>How Perplexity actually works</h2>
+
+    <p>When someone types a query into Perplexity, it runs a live web search (similar to Bing's index), pulls back a set of candidate pages, reads and ranks those pages against the query, then synthesises an answer — showing the sources it used as numbered citations. The model that does the ranking and synthesis changes (Perplexity offers Claude, GPT-4o, and its own Sonar model), but the source selection logic is broadly consistent: <strong>the clearest, most directly relevant, most authoritative content wins</strong>.</p>
+
+    <p>This means Perplexity visibility is closer to SEO than ChatGPT visibility — but with one important twist. Perplexity doesn't just pick the highest-ranking Google result. It picks the result that best answers the specific question asked, even if that result ranks on page 3 of Google. Structure and directness matter more than raw domain authority.</p>
+
+    <h2>The four factors Perplexity weights</h2>
+
+    <h3>1. Direct relevance to the query</h3>
+    <p>Perplexity's retrieval system is optimised to find pages that directly address the question asked — not pages that are generally about the topic. A page titled "How to Set Up Google Business Profile in 2026 (Step-by-Step)" will beat a general "Local SEO Guide" when someone asks "how do I set up Google Business Profile?" even if the general guide has more domain authority.</p>
+
+    <p>The practical implication: write pages and articles that target specific, answerable questions rather than broad topics. One page that answers "what is NAP consistency and why does it matter?" will get cited for that query. A 3,000-word guide on "local SEO" won't necessarily get cited for anything specific.</p>
+
+    <h3>2. Clear, structured answers early in the content</h3>
+    <p>Perplexity's synthesis model reads your content and extracts the most useful passages. Content that answers the question in the first 2-3 paragraphs — before any preamble, background, or "in this article we'll cover" — is far more likely to be cited. Perplexity is extracting the answer. Give it the answer, immediately.</p>
+
+    <blockquote>Write as if someone with very little time is going to read the first paragraph of your page and decide whether you know what you're talking about. You have about 40 words to prove it.</blockquote>
+
+    <p>This is called the "answer-first" or GEO (Generative Engine Optimization) writing principle: lead with the direct answer, then explain the reasoning, then provide detail. The opposite of the traditional blog format (context first, answer last) that many sites still use.</p>
+
+    <h3>3. Freshness and publication date signals</h3>
+    <p>Perplexity explicitly labels how recent sources are and favours recent content for queries where recency matters (which in a fast-moving field like AI search is most queries). Publishing dates visible in your HTML metadata, URL structure, and body text help Perplexity assess freshness. If your article was written in 2021 with no updates, it will lose to a 2025 article covering the same topic, even if yours is better written.</p>
+
+    <p>Update your most valuable content regularly. Even small updates with a "last updated" notice signal freshness. Add a visible date to every article. Keep covering evolving topics as they evolve, not just once.</p>
+
+    <h3>4. Domain trustworthiness and external signals</h3>
+    <p>While Perplexity is less dependent on domain authority than Google, it still uses it as a signal. A page on a domain that has been cited by other credible sources, has existed for some time, and doesn't show signals of spam or manipulation will rank higher in retrieval. This is the same "entity authority" that helps with ChatGPT — building a credible web presence around a clear niche over time.</p>
+
+    <div class="takeaway">
+      <div class="tk-label">The Perplexity formula</div>
+      <p>Specific question → direct answer in first paragraph → clear structure → recent publication date → credible domain. Hit all five and you appear consistently. Miss one or two and you're occasionally cited. Miss most and you're invisible.</p>
+    </div>
+
+    <h2>Perplexity Pages — a direct route to visibility</h2>
+
+    <p>Perplexity has its own content format called Perplexity Pages — long-form, structured content pieces that users can create inside the platform. These are indexed and often cited by Perplexity itself when answering related queries. Creating a Perplexity Page on your core topic is one of the fastest ways to get cited in Perplexity results: you're placing content directly inside the platform's own ecosystem.</p>
+
+    <p>A well-structured Perplexity Page on "how to get your local business visible on AI search" that links back to your website creates a direct citation pathway. Think of it as the Perplexity equivalent of a Wikipedia article — authoritative content within the platform that reinforces your external web presence.</p>
+
+    <h2>What to do this week</h2>
+
+    <ol>
+      <li>Pick your 5 most important topics and check: does each have a dedicated page that answers one specific question in the first 2-3 paragraphs?</li>
+      <li>Add visible publication dates and "last updated" notices to every article or page you want Perplexity to cite</li>
+      <li>Rewrite your most important article or page in answer-first format — lead with the conclusion, then the evidence</li>
+      <li>Create one Perplexity Page on your most important topic and link it back to your main site</li>
+      <li>Submit your sitemap to Bing Webmaster Tools (Perplexity uses Bing's index, so this directly improves your chances)</li>
+    </ol>
+
+    <hr class="divider">
+
+    <div class="guide-cta">
+      <div class="gc-label">Go deeper</div>
+      <h3>AI Search Visibility — Module 2: Google AI Overviews &amp; Perplexity</h3>
+      <p>A complete playbook for getting cited in Google AI Overviews and Perplexity, including the GEO writing framework, schema setup, and freshness tactics.</p>
+      <div class="price">&pound;19 <small>one-off &middot; instant download</small></div>
+      <a href="https://www.welaunchd.store/products/ai-search-module-2-google-ai-overviews-perplexity" class="btn btn-cyan" target="_blank" rel="noopener">Get the guide &rarr;</a>
+    </div>
+
+    <div class="wl-cta">
+      <div class="wl-text">
+        <div class="wl-logo-big">We<span>Launchd</span></div>
+        <p><strong>Rather have someone do this for you?</strong> Chris builds AI-visible websites for local businesses — structured, schema-marked, live in 24 hours. From £499.</p>
+      </div>
+      <a href="https://welaunchd.com" class="btn btn-ink" target="_blank" rel="noopener">Find out more &rarr;</a>
+    </div>
+  </article>
+
+  <aside class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="rel-card" href="google-ai-overviews-explained.html">
+        <div class="rel-cat">Google AI</div>
+        <h3>Google AI Overviews: what they are and how to get featured</h3>
+      </a>
+      <a class="rel-card" href="why-ai-search-ignores-your-business.html">
+        <div class="rel-cat">AI Search Fundamentals</div>
+        <h3>Why AI search ignores your business — and what to do about it</h3>
+      </a>
+    </div>
+  </aside>
+</div>
+</main>
+<footer>
+<div class="wrap">
+  <div class="fcols">
+    <div><a href="/" class="logo">AI Search <span class="lc">School</span></a><p class="ft">Everything you need to be found in the age of AI search.</p></div>
+    <div class="fnav">
+      <div><h4>The School</h4><a href="/articles/">Free articles</a><a href="/#guides">Paid guides</a><a href="https://www.skool.com/ai-search-school-6151/about" target="_blank" rel="noopener">Community</a></div>
+      <div><h4>Done for you?</h4><a href="https://welaunchd.com" target="_blank" rel="noopener">WeLaunchd</a></div>
+    </div>
+  </div>
+  <div class="fbot"><span>&copy; 2026 AI Search School. Part of the WeLaunchd family.</span></div>
+</div>
+</footer>
+<script>document.getElementById('nav')&&document.querySelector('.burger').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open');});</script>
+</body>
+</html>

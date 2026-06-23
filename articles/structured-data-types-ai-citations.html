@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 5 Structured Data Types That Make AI Cite Your Business First | AI Search School</title>
+<meta name="description" content="Not all schema markup has the same impact on AI citations. These 5 structured data types — LocalBusiness, FAQPage, Article, Review, and BreadcrumbList — are the ones that directly drive AI search visibility for local businesses in 2026.">
+<link rel="canonical" href="https://aisearchschool.com/articles/structured-data-types-ai-citations.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230D1030'/%3E%3Ctext x='50' y='70' font-family='Arial,sans-serif' font-size='62' font-weight='bold' text-anchor='middle' fill='%2300B4D8'%3EA%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The 5 Structured Data Types That Make AI Cite Your Business First">
+<meta property="og:description" content="Not all schema markup has the same impact on AI citations. These 5 structured data types are the ones that directly drive AI search visibility for local businesses in 2026.">
+<meta property="og:url" content="https://aisearchschool.com/articles/structured-data-types-ai-citations.html">
+<meta property="og:site_name" content="AI Search School">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"The 5 Structured Data Types That Make AI Cite Your Business First",
+  "description":"Not all schema markup has the same impact on AI citations. These 5 structured data types are the ones that directly drive AI search visibility for local businesses in 2026.",
+  "url":"https://aisearchschool.com/articles/structured-data-types-ai-citations.html",
+  "datePublished":"2026-06-22",
+  "dateModified":"2026-06-22",
+  "author":{"@type":"Person","name":"Chris","description":"Founder of AI Search School.","url":"https://aisearchschool.com"},
+  "publisher":{"@type":"Organization","name":"AI Search School","url":"https://aisearchschool.com"},
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://aisearchschool.com/articles/structured-data-types-ai-citations.html"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"What is structured data and why does it matter for AI search?",
+      "acceptedAnswer":{"@type":"Answer","text":"Structured data is code added to your website that labels your content in a machine-readable format using the schema.org vocabulary. Instead of AI tools having to interpret the meaning of unstructured text, structured data explicitly tells them what each piece of content is — your business name, your address, the questions you answer, your reviews. Sites with structured data are cited in AI responses significantly more often because the AI can extract precise facts without interpretation errors."}
+    },
+    {
+      "@type":"Question",
+      "name":"Which schema type is most important for local businesses?",
+      "acceptedAnswer":{"@type":"Answer","text":"LocalBusiness schema is the most fundamental — it tells AI tools who you are, where you are, and what you do. Without it, AI has to guess your business details from unstructured text. FAQPage schema has the highest citation rate for AI-generated answers specifically, because it provides pre-formatted Q&A content that AI can extract directly. For a local business, implementing LocalBusiness and FAQPage schema together gives the greatest combined impact on AI visibility."}
+    },
+    {
+      "@type":"Question",
+      "name":"How many schema types should I add to my website?",
+      "acceptedAnswer":{"@type":"Answer","text":"For a local business website, implementing the five core types — LocalBusiness, FAQPage, Article (on any content pages), Review/AggregateRating, and BreadcrumbList — covers the vast majority of AI citation opportunities. You don't need to add every schema.org type. Focus on the five that align with your actual content and business type. Adding irrelevant schema or schema with no matching visible content can trigger Google penalties."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I add multiple schema types to the same page?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes — multiple schema types can coexist on the same page and is recommended. Your homepage might have LocalBusiness schema (describing the business), FAQPage schema (labelling your FAQ section), and BreadcrumbList schema (labelling your navigation) all at once. Each type serves a different purpose and they don't conflict. Use separate JSON-LD script blocks for each type, or combine them inside a single @graph array."}
+    },
+    {
+      "@type":"Question",
+      "name":"How do I know if my schema is working?",
+      "acceptedAnswer":{"@type":"Answer","text":"Use Google's free Rich Results Test (search.google.com/test/rich-results) — paste your page URL to check which schema types were detected and whether there are any errors. Also use validator.schema.org to check your JSON-LD code for syntax errors before publishing. Google Search Console's Enhancement reports will show you any schema issues across your whole site once Google has crawled your pages."}
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--t:#00B4D8;--t2:#0077A3;--ink:#0D1030;--grey:#4a5270;--soft:#9aa0bc;--line:#e4f4fa;--mist:#F0FAFF;--white:#fff;--hd:'Plus Jakarta Sans',sans-serif;--bd:'Inter',sans-serif;--sh2:0 6px 20px rgba(0,100,130,.08);--r:16px;}
+*{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}body{font-family:var(--bd);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased;line-height:1.7;}a{text-decoration:none;color:inherit;}.wrap{max-width:1100px;margin:0 auto;padding:0 22px;}.art-wrap{max-width:720px;margin:0 auto;padding:0 22px;}
+h1,h2,h3{font-family:var(--hd);font-weight:800;line-height:1.1;letter-spacing:-.4px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--hd);font-weight:700;font-size:14px;padding:12px 22px;border-radius:999px;border:0;cursor:pointer;transition:transform .14s;text-decoration:none;}.btn:hover{transform:translateY(-2px);}
+.btn-teal{background:var(--t);color:#fff;box-shadow:0 8px 20px rgba(0,180,216,.3);}
+header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px;}
+.logo{font-family:var(--hd);font-weight:800;font-size:19px;color:var(--ink);}.logo span{color:var(--t);}
+.nl{display:flex;align-items:center;gap:22px;}.nl a{font-family:var(--hd);font-weight:600;font-size:14px;color:var(--grey);}.nl a:hover{color:var(--t);}
+.burger{display:none;background:none;border:0;font-size:22px;cursor:pointer;}
+@media(max-width:820px){.nl{display:none;}.burger{display:block;}}
+.breadcrumb{padding:18px 0 0;font-size:13px;color:var(--soft);}.breadcrumb a{color:var(--soft);}.breadcrumb span{margin:0 6px;}
+.art-header{padding:32px 0 40px;}
+.art-cat-label{font-family:var(--hd);font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--t);margin-bottom:12px;}
+.art-header h1{font-size:38px;margin-bottom:16px;line-height:1.1;}
+.art-meta{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--soft);flex-wrap:wrap;}.art-meta .author{font-weight:600;color:var(--grey);}
+.art-body{padding-bottom:60px;}
+.art-body p{font-size:16.5px;color:var(--grey);margin-bottom:22px;line-height:1.74;}
+.art-body h2{font-size:26px;color:var(--ink);margin:42px 0 14px;letter-spacing:-.3px;}
+.art-body h3{font-size:19px;color:var(--ink);margin:28px 0 11px;}
+.art-body ul,.art-body ol{margin:0 0 22px;padding-left:0;list-style:none;}
+.art-body ul li,.art-body ol li{font-size:16px;color:var(--grey);padding:8px 0 8px 26px;border-bottom:1px solid var(--line);position:relative;line-height:1.6;}
+.art-body ul li:last-child,.art-body ol li:last-child{border-bottom:0;}
+.art-body ul li::before{content:"\2713";position:absolute;left:0;color:var(--t);font-weight:800;}
+.art-body ol{counter-reset:ol;}.art-body ol li{counter-increment:ol;}.art-body ol li::before{content:counter(ol)".";position:absolute;left:0;color:var(--t);font-weight:800;font-family:var(--hd);}
+.art-body strong{color:var(--ink);font-weight:600;}
+.art-body a{color:var(--t);font-weight:600;}.art-body a:hover{text-decoration:underline;}
+.art-body blockquote{background:var(--mist);border-left:4px solid var(--t);border-radius:0 var(--r) var(--r) 0;padding:18px 22px;margin:26px 0;font-family:var(--hd);font-weight:700;font-size:17px;color:var(--ink);line-height:1.45;}
+.art-body .divider{border:0;border-top:1px solid var(--line);margin:40px 0;}
+.takeaway{background:var(--mist);border:1px solid rgba(0,180,216,.25);border-radius:var(--r);padding:20px 22px;margin:28px 0;}
+.takeaway .tk-label{font-family:var(--hd);font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--t);margin-bottom:8px;}
+.takeaway p{font-size:15px;color:var(--ink);margin:0;line-height:1.6;}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0;}
+.stat-box{background:var(--mist);border:1px solid rgba(0,180,216,.2);border-radius:14px;padding:18px 16px;text-align:center;}
+.stat-num{font-family:var(--hd);font-weight:800;font-size:30px;color:var(--t);line-height:1;}
+.stat-lbl{font-size:13px;color:var(--soft);margin-top:6px;line-height:1.4;}
+@media(max-width:560px){.stat-row{grid-template-columns:1fr 1fr;}}
+.schema-card{background:var(--mist);border:1px solid rgba(0,180,216,.22);border-radius:var(--r);padding:24px;margin:24px 0;}
+.schema-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--t);color:#fff;border-radius:50%;font-family:var(--hd);font-weight:800;font-size:14px;margin-bottom:12px;}
+.schema-card h3{font-size:19px;margin:0 0 8px;}
+.schema-card .impact{font-size:12px;font-weight:700;font-family:var(--hd);letter-spacing:1.5px;text-transform:uppercase;color:var(--t);margin-bottom:10px;}
+.schema-card p{font-size:15px;color:var(--grey);margin:0 0 12px;line-height:1.6;}
+.schema-card ul{margin:0;}
+.schema-card ul li{font-size:14px;color:var(--grey);}
+.ass-cta{background:var(--ink);border-radius:20px;padding:32px;margin:44px 0;color:#fff;position:relative;overflow:hidden;}
+.ass-cta::before{content:'';position:absolute;inset:-30%;background:radial-gradient(38% 44% at 82% 15%,rgba(0,180,216,.4),transparent 60%);pointer-events:none;}
+.ass-cta>*{position:relative;}
+.ass-cta .label{font-family:var(--hd);font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--t);margin-bottom:8px;}
+.ass-cta h3{font-size:21px;color:#fff;margin-bottom:8px;}
+.ass-cta p{font-size:14px;color:#e2e4f3;margin-bottom:18px;}
+.ass-cta .price{font-family:var(--hd);font-weight:800;font-size:26px;color:#fff;margin-bottom:16px;}
+.ass-cta .price small{font-size:13px;color:#9aa0bc;font-weight:600;}
+.faq-section{margin:44px 0;}
+.faq-section h2{font-family:var(--hd);font-size:24px;margin-bottom:22px;}
+.faq-item{border-bottom:1px solid var(--line);padding:18px 0;}
+.faq-item:last-child{border-bottom:0;}
+.faq-q{font-family:var(--hd);font-weight:700;font-size:16px;color:var(--ink);margin-bottom:8px;}
+.faq-a{font-size:15px;color:var(--grey);line-height:1.65;}
+.related{margin-top:52px;padding-top:36px;border-top:1px solid var(--line);}
+.related h2{font-family:var(--hd);font-weight:800;font-size:19px;margin-bottom:18px;}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.rel-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--sh2);transition:transform .14s;display:block;}
+.rel-card:hover{transform:translateY(-2px);}
+.rel-cat{font-family:var(--hd);font-weight:700;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--t);margin-bottom:6px;}
+.rel-card h3{font-size:15px;font-family:var(--hd);font-weight:700;color:var(--ink);line-height:1.3;}
+@media(max-width:560px){.related-grid{grid-template-columns:1fr;}.art-header h1{font-size:28px;}}
+footer{background:var(--ink);color:#c7c9de;padding:44px 0 22px;margin-top:60px;}
+.fcols{display:flex;gap:32px;flex-wrap:wrap;justify-content:space-between;margin-bottom:28px;}
+footer .logo{font-size:18px;}footer .ft{margin-top:9px;font-size:13px;color:#9aa0bc;max-width:240px;line-height:1.55;}
+.fnav{display:flex;gap:40px;flex-wrap:wrap;}.fnav h4{font-family:var(--hd);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;margin-bottom:10px;}.fnav a{display:block;font-size:13px;color:#c7c9de;margin-bottom:7px;}.fnav a:hover{color:#fff;}
+.fbot{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;font-size:12px;color:#7a8098;display:flex;justify-content:space-between;flex-wrap:wrap;gap:7px;}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap"><nav>
+  <a href="/" class="logo"><span>AI Search</span> School</a>
+  <div class="nl" id="nav">
+    <a href="/articles/">Articles</a>
+    <a href="/guides/">Guides</a>
+    <a href="https://welaunchd.com" target="_blank" rel="noopener" style="color:#5B2BFF;font-weight:700;">WeLaunchd ↗</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <a href="/guides/" class="btn btn-teal">Get the guides &rarr;</a>
+    <button class="burger" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+  </div>
+</nav></div>
+</header>
+
+<main><div class="art-wrap">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a><span>›</span><a href="/articles/">Articles</a><span>›</span>Getting started
+  </nav>
+
+  <header class="art-header">
+    <div class="art-cat-label" data-cat="start">Getting started</div>
+    <h1>The 5 Structured Data Types That Make AI Cite Your Business First</h1>
+    <div class="art-meta">
+      <span class="author">Chris · June 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+    </div>
+  </header>
+
+  <article class="art-body">
+
+    <p>Schema.org lists over 800 types of structured data. You don't need most of them. For a local business trying to get cited by AI tools like ChatGPT, Perplexity, and Google AI Overviews, five schema types do almost all the work: <strong>LocalBusiness, FAQPage, Article, AggregateRating, and BreadcrumbList</strong>. This article explains what each one does, why it affects AI citation rates, and exactly which fields to include.</p>
+
+    <div class="stat-row">
+      <div class="stat-box"><div class="stat-num">5</div><div class="stat-lbl">schema types cover 90%+ of AI citation opportunities for local businesses</div></div>
+      <div class="stat-box"><div class="stat-num">47%</div><div class="stat-lbl">more AI citations for pages with FAQPage schema vs none</div></div>
+      <div class="stat-box"><div class="stat-num">800+</div><div class="stat-lbl">total schema types exist — most irrelevant to local businesses</div></div>
+    </div>
+
+    <h2>Why structured data matters so much for AI search in 2026</h2>
+
+    <p>AI tools don't rank pages the way Google's traditional algorithm does. They retrieve information — and the quality of that retrieval depends heavily on how clearly the information is labelled. A page with no schema is a box of unsorted documents. A page with structured data is a neatly labelled filing cabinet.</p>
+
+    <p>When ChatGPT is deciding between two local plumbers to recommend, all else being equal, it will cite the one whose website clearly states their business type, location, services, credentials, and what questions they can answer — in structured, machine-readable format. The other business might have all the same information, buried in paragraphs of flowing prose. But AI has to work to extract it, introducing the risk of misinterpretation or simply overlooking it.</p>
+
+    <blockquote>Structured data doesn't make your business better. It makes your business legible to AI. That's worth a lot more than it sounds.</blockquote>
+
+    <h2>Type 1: LocalBusiness schema</h2>
+
+    <div class="schema-card">
+      <div class="schema-num">1</div>
+      <div class="impact">Highest overall impact · Add to: Homepage</div>
+      <h3>LocalBusiness — tells AI who and where you are</h3>
+      <p>LocalBusiness schema is the foundation. It identifies your business to AI tools by explicitly labelling your name, address, phone number, business type, opening hours, service area, and URL. Without it, every AI tool that encounters your website has to infer these facts from unstructured content — and inference introduces errors.</p>
+      <p>The most critical fields to include:</p>
+      <ul>
+        <li><strong>@type</strong> — use the most specific subtype available: "Plumber", "Electrician", "HairSalon", "AutoRepair" rather than just "LocalBusiness"</li>
+        <li><strong>name</strong> — your exact trading name, matching your Google Business Profile</li>
+        <li><strong>address</strong> — PostalAddress with streetAddress, addressLocality, postalCode, addressCountry</li>
+        <li><strong>telephone</strong> — your primary phone number</li>
+        <li><strong>openingHoursSpecification</strong> — each day with opens/closes times</li>
+        <li><strong>areaServed</strong> — the geographic areas you cover</li>
+        <li><strong>url</strong> — your website URL</li>
+        <li><strong>priceRange</strong> — "£" to "££££" — helps AI match you to price-related queries</li>
+      </ul>
+    </div>
+
+    <h2>Type 2: FAQPage schema</h2>
+
+    <div class="schema-card">
+      <div class="schema-num">2</div>
+      <div class="impact">Highest AI citation rate · Add to: Homepage or FAQ page</div>
+      <h3>FAQPage — pre-formats your answers for AI extraction</h3>
+      <p>FAQPage schema labels your question-and-answer content in a format AI can extract directly. It's the single highest-impact schema type for AI citation rate — pages with FAQPage schema appear in 47% more Perplexity responses than those without. The reason is structural: AI tools are built to answer questions. FAQPage schema gives them pre-packaged answers that don't require interpretation.</p>
+      <p>The key rules:</p>
+      <ul>
+        <li>4–8 questions is the optimal range — fewer doesn't provide enough coverage, more dilutes quality</li>
+        <li>Every answer must start with the direct answer in the first sentence — not a preamble</li>
+        <li>The Q&As in the schema must exactly match visible Q&A content on the page</li>
+        <li>Keep answers to 2–4 sentences — concise and extractable</li>
+        <li>Use real questions customers ask — check your enquiry emails, phone calls, and review content for source material</li>
+      </ul>
+      <p><a href="/articles/what-is-faq-schema-google-ai-overviews.html">Full guide to writing and adding FAQPage schema →</a></p>
+    </div>
+
+    <h2>Type 3: Article schema</h2>
+
+    <div class="schema-card">
+      <div class="schema-num">3</div>
+      <div class="impact">High impact for content pages · Add to: Blog posts and guides</div>
+      <h3>Article — signals expertise and freshness to AI</h3>
+      <p>Article schema tells AI tools that a page contains authored content — not just a service listing. It includes the author's name, the publication date, and the headline. This is important for AI citation for two reasons: first, AI tools apply "expertise and authority" signals when choosing sources; second, the <strong>datePublished</strong> field tells AI the content is current — a major factor when AI tools are forming recommendations about anything time-sensitive.</p>
+      <p>Essential fields:</p>
+      <ul>
+        <li><strong>headline</strong> — the article title, matching your H1</li>
+        <li><strong>datePublished</strong> — the original publication date in ISO 8601 format (e.g. "2026-06-22")</li>
+        <li><strong>dateModified</strong> — when you last updated it — keep this current</li>
+        <li><strong>author</strong> — your name and job title (Person type with name and jobTitle)</li>
+        <li><strong>publisher</strong> — your business name and logo URL</li>
+        <li><strong>description</strong> — a 1–2 sentence summary of the article content</li>
+      </ul>
+      <p>A recent datePublished on a well-structured Article page is one of the key signals that differentiates a citable source from an outdated one in AI recommendations.</p>
+    </div>
+
+    <h2>Type 4: AggregateRating schema</h2>
+
+    <div class="schema-card">
+      <div class="schema-num">4</div>
+      <div class="impact">High impact for trust signals · Add to: Homepage or reviews page</div>
+      <h3>AggregateRating — tells AI your review score without them having to check</h3>
+      <p>AggregateRating schema marks up your overall rating and review count directly on your website. When AI tools are comparing businesses to recommend, review scores are a significant factor — ChatGPT uses review data in 58% of local recommendations. AggregateRating schema makes this data immediately accessible without the AI needing to cross-reference external review platforms.</p>
+      <p>Fields to include:</p>
+      <ul>
+        <li><strong>ratingValue</strong> — your average rating (e.g. "4.8")</li>
+        <li><strong>reviewCount</strong> — your total number of reviews</li>
+        <li><strong>bestRating</strong> — maximum possible rating ("5")</li>
+        <li><strong>worstRating</strong> — minimum possible rating ("1")</li>
+      </ul>
+      <p>Important: AggregateRating must be nested inside your LocalBusiness schema, not added separately. And your rating must be real and current — Google cross-checks this data.</p>
+    </div>
+
+    <h2>Type 5: BreadcrumbList schema</h2>
+
+    <div class="schema-card">
+      <div class="schema-num">5</div>
+      <div class="impact">Supporting signal · Add to: Every page</div>
+      <h3>BreadcrumbList — helps AI understand your site structure</h3>
+      <p>BreadcrumbList schema labels your page hierarchy — where a page sits within your website structure. It's less dramatic than LocalBusiness or FAQPage in terms of direct citation impact, but it's important for helping AI tools understand the relationship between your pages. A well-structured breadcrumb hierarchy signals topical organisation, which contributes to the "authority" signals AI uses when deciding whether to cite your site.</p>
+      <p>Fields to include:</p>
+      <ul>
+        <li><strong>itemListElement</strong> — an array of ListItem, each with position, name, and item (URL)</li>
+        <li>Example: Home › Services › Boiler Installation would be three ListItems at positions 1, 2, 3</li>
+      </ul>
+      <p>BreadcrumbList also enables breadcrumb display in Google Search results, which improves click-through rates from traditional search — a secondary benefit on top of the AI visibility effect.</p>
+    </div>
+
+    <h2>How to implement all five without a developer</h2>
+
+    <p>For WordPress sites, a single plugin like <strong>Rank Math</strong> (free) covers LocalBusiness, Article, FAQPage, AggregateRating, and BreadcrumbList with no coding. It auto-generates most of the schema from your settings and page content.</p>
+
+    <p>For non-WordPress sites, generate the JSON-LD for each type manually or using Google's Structured Data Markup Helper, paste it into your page's <code>&lt;head&gt;</code> section, and verify with the Rich Results Test at search.google.com/test/rich-results.</p>
+
+    <p>If you're building a new site, use a platform that includes schema markup as standard. <a href="https://welaunchd.com" target="_blank" rel="noopener">WeLaunchd builds LocalBusiness and FAQPage schema into every site as default</a> — you don't need to configure anything.</p>
+
+    <div class="takeaway">
+      <div class="tk-label">Priority order</div>
+      <p>If you can only add one schema type today: <strong>LocalBusiness</strong>. If you can add two: <strong>LocalBusiness + FAQPage</strong>. Together they cover the two most impactful citation signals for local business AI visibility. Add Article, AggregateRating, and BreadcrumbList as you build out your content — they compound the effect.</p>
+    </div>
+
+    <div class="ass-cta">
+      <div class="label">Go deeper</div>
+      <h3>Get the complete AI Local Search guide series</h3>
+      <p>Module 1 covers schema markup in full — with the exact LocalBusiness and FAQPage JSON-LD templates to copy into your site, explained step by step for non-technical business owners.</p>
+      <div class="price">From £9 <small>per module · instant download</small></div>
+      <a href="/guides/" class="btn btn-teal">See all guides &rarr;</a>
+    </div>
+
+    <hr class="divider">
+
+    <div class="faq-section">
+      <h2>Frequently asked questions about structured data for AI citations</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">What is structured data and why does it matter for AI search?</div>
+        <div class="faq-a">Structured data is code added to your website that labels your content in a machine-readable format using schema.org vocabulary. Instead of AI tools having to interpret unstructured text, structured data explicitly tells them what each piece of content is. Sites with structured data are cited in AI responses significantly more often because AI can extract precise facts without interpretation errors.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Which schema type is most important for local businesses?</div>
+        <div class="faq-a">LocalBusiness schema is the most fundamental — it tells AI tools who you are, where you are, and what you do. FAQPage schema has the highest citation rate for AI-generated answers specifically. For a local business, implementing both together gives the greatest combined impact on AI visibility.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How many schema types should I add to my website?</div>
+        <div class="faq-a">For a local business, the five core types — LocalBusiness, FAQPage, Article, AggregateRating, and BreadcrumbList — cover the vast majority of AI citation opportunities. You don't need to add every schema.org type. Focus on the five that align with your actual content and business type.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I add multiple schema types to the same page?</div>
+        <div class="faq-a">Yes — multiple schema types can coexist on the same page. Your homepage might have LocalBusiness, FAQPage, and BreadcrumbList schema all at once. Each type serves a different purpose and they don't conflict. Use separate JSON-LD script blocks for each type, or combine them inside a single @graph array.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I know if my schema is working?</div>
+        <div class="faq-a">Use Google's free Rich Results Test (search.google.com/test/rich-results) — paste your page URL to check which schema types were detected and whether there are errors. Also use validator.schema.org to check your JSON-LD for syntax issues before publishing.</div>
+      </div>
+    </div>
+
+  </article>
+
+  <div class="related">
+    <h2>Related articles</h2>
+    <div class="related-grid">
+      <a href="/articles/how-to-get-cited-by-chatgpt-step-by-step.html" class="rel-card">
+        <div class="rel-cat">Getting started</div>
+        <h3>How to Get Your Business Cited by ChatGPT: Step-by-Step Guide for 2026</h3>
+      </a>
+      <a href="/articles/what-is-faq-schema-google-ai-overviews.html" class="rel-card">
+        <div class="rel-cat">Getting started</div>
+        <h3>What Is FAQ Schema and Why It Gets You Into Google AI Overviews</h3>
+      </a>
+      <a href="/articles/why-your-business-is-invisible-to-chatgpt.html" class="rel-card">
+        <div class="rel-cat">Getting started</div>
+        <h3>Why Your Business Is Invisible to ChatGPT Right Now</h3>
+      </a>
+      <a href="/articles/local-ai-search-ranking-factors-2026.html" class="rel-card">
+        <div class="rel-cat">Local search</div>
+        <h3>The 8 Ranking Factors That Determine Your AI Search Visibility in 2026</h3>
+      </a>
+    </div>
+  </div>
+
+</div></main>
+
+<footer>
+<div class="wrap">
+  <div class="fcols">
+    <div>
+      <div class="logo"><span>AI Search</span> School</div>
+      <div class="ft">Teaching local businesses how to get found in the AI era — step by step, no jargon.</div>
+    </div>
+    <div class="fnav">
+      <div>
+        <h4>Site</h4>
+        <a href="/">Home</a>
+        <a href="/articles/">Articles</a>
+        <a href="/guides/">Guides</a>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <a href="/articles/structured-data-types-ai-citations.html">Structured Data Types</a>
+        <a href="/articles/what-is-faq-schema-google-ai-overviews.html">FAQ Schema</a>
+        <a href="https://welaunchd.com" target="_blank" rel="noopener">WeLaunchd</a>
+      </div>
+    </div>
+  </div>
+  <div class="fbot">
+    <span>© 2026 AI Search School. All rights reserved.</span>
+    <span>aisearchschool.com</span>
+  </div>
+</div>
+</footer>
+</body>
+</html>
